@@ -19,7 +19,7 @@ layout: default
     </nav>
   </div>
   <div class="hero__portrait">
-    <img src="{{ p.photo | relative_url }}" alt="Portrait of {{ p.name }}" width="132" height="165">
+    <img src="{{ p.photo | relative_url }}?v={{ site.time | date: '%s' }}" alt="Portrait of {{ p.name }}" width="132" height="165">
   </div>
 </header>
 
