@@ -1,0 +1,35 @@
+# 상단 프로필 영역. 여기만 고치면 헤더가 바뀝니다.
+name: Jaeseok Byun
+role: Ph.D. student
+photo: /assets/img/profile.jpg
+
+institution:
+  name: Seoul National University
+  url: https://www.snu.ac.kr
+lab:
+  name: M.IN.D Lab
+  url: https://mindlab-snu.github.io
+advisor: Taesup Moon
+
+email: "wotjr3868 [at] snu.ac.kr"
+
+links:
+  - name: Google Scholar
+    url: https://scholar.google.co.kr/citations?hl=en&user=4DEKVp0AAAAJ
+  - name: GitHub
+    url: https://github.com/jaeseokbyun
+  - name: LinkedIn
+    url: http://www.linkedin.com/in/jaeseok-byun-1096b2160
+  # CV PDF를 assets/files/ 에 올리고 주석을 풀면 링크가 생깁니다.
+  # - name: CV
+  #   url: /assets/files/cv.pdf
+
+bio: >-
+  I am a graduate research assistant working towards developing practical AI
+  algorithms in resource-constrained systems. I have previously worked as a
+  research intern at <a href="https://amazon.jobs/content/en/teams/agi">Amazon AGI</a>
+  and <a href="https://www.microsoft.com/en-us/research/lab/microsoft-research-asia/">Microsoft Research Asia</a>,
+  and as a visiting student researcher at
+  <a href="https://web.stanford.edu/~tsachy/group.html">Stanford University</a>.
+  My primary research focus lies in image denoising and multi-modal
+  representation learning.

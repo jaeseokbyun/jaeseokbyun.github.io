@@ -1,0 +1,67 @@
+# 학력 / 경력 / 수상 / 학회 활동. period가 왼쪽 기둥에 표시됩니다.
+
+education:
+  - period: "2021.09 – Present"
+    degree: Ph.D. in Electrical and Computer Engineering
+    org: Seoul National University
+    url: https://www.snu.ac.kr
+  - period: "2013.03 – 2021.08"
+    degree: B.S. in Statistics, M.S. in Electrical and Computer Engineering
+    org: Sungkyunkwan University
+    url: https://www.skku.edu/skku/index.do
+
+experience:
+  - period: "2025.09 – 2025.12"
+    role: Applied Scientist Intern
+    org: Amazon AGI
+    note: "Manager: Davide Modolo, Mentor: Gukyeong Kwon"
+  - period: "2025.02 – 2025.08"
+    role: Visiting Student Researcher
+    org: Stanford University
+    note: "Mentor: Tsachy Weissman"
+  - period: "2021.10 – 2022.05"
+    role: Research Intern
+    org: Microsoft Research Asia
+    note: "Mentor: Jianlong Fu"
+  - period: "2018.01 – 2018.02"
+    role: Intern
+    org: SKT Data Analytics CoE
+    note: "Mentor: Sehoon Lee"
+  - period: "2017.07 – 2017.08"
+    role: Intern
+    org: MISO (O2O platform start-up)
+  - period: "2014.07 – 2016.07"
+    role: Military Service
+    org: Republic of Korea Army
+
+awards:
+  - date: "2025.05"
+    title: CVPR Outstanding Reviewer
+  - date: "2022.06 – Present"
+    title: SBS Foundation Scholarship
+  - date: "2022.05"
+    title: Stars of Tomorrow, Excellence Award, MSRA Internship
+  - date: "2022.02"
+    title: Future Gauss Lecturer
+    org: Gauss Labs
+    url: https://gausslabs.ai
+  - date: "2021.11"
+    title: Qualcomm Innovation Fellowship Korea (QIFK)
+    url: https://www.qualcomm.com/research/research/university-relations/innovation-fellowship/winners
+  - date: "2017.11"
+    title: Big Contest Challenge League, Second Prize
+  - date: "2017.02"
+    title: Institute of Applied Statistics, SKKU, First Prize
+  - date: "2016.09 – 2019.06"
+    title: Wooseok Jungho Scholarship
+
+services:
+  - kind: Conferences
+    items: ICML 2023–2025, NeurIPS 2023–2025, ICLR 2024–2026, CVPR 2024–2026, ICCV 2025, ECCV 2026, AAAI 2024–2026, EMNLP 2023
+  - kind: Journals
+    items: TMLR 2024–2026
+
+activities:
+  - period: "2016.09 – 2017.12"
+    role: President, Statistical Analysis Study Club
+    org: Sungkyunkwan University

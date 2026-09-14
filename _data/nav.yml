@@ -1,0 +1,13 @@
+# 상단 탭. 순서를 바꾸거나 항목을 빼면 그대로 반영됩니다.
+# href의 '#뒤 이름'은 index.html의 <section id="..."> 와 같아야 합니다.
+
+- name: Publications
+  href: "#publications"
+- name: Education
+  href: "#education"
+- name: Experience
+  href: "#experience"
+- name: Awards
+  href: "#awards"
+- name: Service
+  href: "#service"

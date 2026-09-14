@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {%- seo -%}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+  {% include topbar.html %}
+
+  <main class="page">
+    {{ content }}
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <span>Last updated {{ site.time | date: "%b %Y" }}</span>
+      <span>Built with Jekyll, hosted on GitHub Pages</span>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var bar = document.getElementById('topbar');
+      var tabs = Array.prototype.slice.call(document.querySelectorAll('.tabs a'));
+      var sections = tabs
+        .map(function (a) { return document.getElementById(a.dataset.target); })
+        .filter(Boolean);
+      var ticking = false;
+
+      function update() {
+        ticking = false;
+        bar.classList.toggle('is-scrolled', window.scrollY > 120);
+
+        var current = null;
+        sections.forEach(function (s) {
+          if (s.getBoundingClientRect().top <= 140) { current = s; }
+        });
+
+        tabs.forEach(function (a) {
+          if (current && a.dataset.target === current.id) {
+            a.setAttribute('aria-current', 'true');
+          } else {
+            a.removeAttribute('aria-current');
+          }
+        });
+      }
+
+      function onScroll() {
+        if (!ticking) { ticking = true; requestAnimationFrame(update); }
+      }
+
+      window.addEventListener('scroll', onScroll, { passive: true });
+      window.addEventListener('resize', onScroll);
+      update();
+    })();
+  </script>
+</body>
+</html>

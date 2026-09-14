@@ -1,0 +1,10 @@
+<div class="topbar" id="topbar">
+  <div class="topbar__inner">
+    <a class="topbar__name" href="#top">{{ site.data.profile.name }}</a>
+    <nav class="tabs" aria-label="Sections">
+      {%- for item in site.data.nav %}
+      <a href="{{ item.href }}" data-target="{{ item.href | remove: '#' }}">{{ item.name }}</a>
+      {%- endfor %}
+    </nav>
+  </div>
+</div>

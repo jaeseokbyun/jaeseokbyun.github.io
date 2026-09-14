@@ -1,0 +1,64 @@
+# 논문 추가 = 맨 위에 블록 하나 붙여넣기. 파일에 적힌 순서 그대로 출력됩니다.
+#
+# - title:    논문 제목
+#   authors:  저자 나열 ("Jaeseok Byun"은 자동으로 굵게 표시됨)
+#   venue:    학회/저널 약어 (왼쪽 기둥에 표시)
+#   year:     연도
+#   preprint: true   → Preprint 섹션으로 감 (없으면 Publications)
+#   note:     "Oral Presentation" 같은 부가 설명 (선택)
+#   links:            (선택)
+#     - { name: arXiv, url: https://arxiv.org/abs/0000.00000 }
+#     - { name: Code,  url: https://github.com/... }
+
+- title: Region-Aware Text-to-Image Retrieval with Efficient Region-Informed Sequential Query Embedding
+  authors: "Seokhyeon Jeong*, Jaeseok Byun*, Paul Hongsuck Seo, and Taesup Moon"
+  venue: Preprint
+  year: 2026
+  preprint: true
+  note: "*: Equal contribution"
+
+- title: Multi-modal Knowledge Preserving Adapter for Embedding Backward Compatibility
+  authors: "Jaeseok Byun, Gukyeong Kwon, Han-Kai Hsu, Meher Gitika Karumuri, Zhikang Zhang, Hao Yang, and Davide Modolo"
+  venue: ECCV
+  year: 2026
+  note: "Work done during internship at Amazon AGI"
+
+- title: Efficient and Robust SEM Image Denoising for Wafer Defect Inspection
+  authors: "Hyungwoong Bae, Jaeseok Byun, Yongwoo Lee, and Taesup Moon"
+  venue: Microscopy and Microanalysis
+  year: 2025
+
+- title: "MA-CIR: Multi-modal Arithmetic Benchmarks for Composed Image Retrieval"
+  authors: "Jaeseok Byun, Youngkyun Jang, Seokhyeon Jeong, Donghyun Kim, and Taesup Moon"
+  venue: ICCV
+  year: 2025
+
+- title: "RTD: Reducing Task Discrepancy of Text Encoders for Zero-Shot Composed Image Retrieval"
+  authors: "Jaeseok Byun*, Seokhyeon Jeong*, Wonjae Kim, Sanghyuk Chun, and Taesup Moon"
+  venue: ICCV
+  year: 2025
+  note: "*: Equal contribution"
+
+- title: "MAFA: Managing False Negatives for Vision-Language Pre-training"
+  authors: "Jaeseok Byun*, Dohoon Kim*, and Taesup Moon"
+  venue: CVPR
+  year: 2024
+  note: "*: Equal contribution"
+
+- title: "GRIT-VLP: Grouped Mini-batch Sampling for Vision-Language Pre-training"
+  authors: "Jaeseok Byun*, Taebaek Hwang*, Jianlong Fu, and Taesup Moon"
+  venue: ECCV
+  year: 2022
+  note: "*: Equal contribution"
+
+- title: "FBI-Denoiser: Fast Blind Image Denoiser for Source-Dependent Noise"
+  authors: "Jaeseok Byun*, Sungmin Cha*, and Taesup Moon"
+  venue: CVPR
+  year: 2021
+  note: "Oral presentation. *: Equal contribution"
+
+- title: Learning Blind Pixelwise Affine Image Denoiser with Single Noisy Images
+  authors: "Jaeseok Byun and Taesup Moon"
+  venue: IEEE SPL
+  year: 2020
+  note: IEEE Signal Processing Letters

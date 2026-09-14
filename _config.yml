@@ -1,0 +1,28 @@
+# ── 사이트 기본 정보 ───────────────────────────────────────────────
+title: Jaeseok Byun
+tagline: Ph.D. student at Seoul National University
+description: >-
+  Jaeseok Byun is a Ph.D. student at Seoul National University (M.IN.D Lab),
+  working on image denoising and multi-modal representation learning.
+
+# GitHub Pages 주소. <username>.github.io 레포면 아래처럼,
+# 커스텀 도메인을 쓰면 https://your-domain.com 으로 바꾸세요.
+url: "https://jaeseokbyun.github.io"
+baseurl: ""
+
+# 저자 목록에서 자동으로 굵게 처리할 이름
+author_name: "Jaeseok Byun"
+
+# ── 빌드 설정 (건드릴 일 거의 없음) ──────────────────────────────
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+
+sass:
+  style: compressed

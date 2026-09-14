@@ -1,0 +1,157 @@
+---
+layout: default
+---
+{%- assign p = site.data.profile -%}
+{%- assign me = '<strong>' | append: site.author_name | append: '</strong>' -%}
+
+<header class="hero anchor" id="top">
+  <div class="hero__text">
+    <h1 class="hero__name">{{ p.name }}</h1>
+    <p class="hero__role">
+      {{ p.role }} at <a href="{{ p.institution.url }}">{{ p.institution.name }}</a><br>
+      <a href="{{ p.lab.url }}">{{ p.lab.name }}</a>, advised by {{ p.advisor }}<br>
+      <span class="hero__email">{{ p.email }}</span>
+    </p>
+    <nav class="hero__links" aria-label="Profiles">
+      {%- for l in p.links %}
+      <a href="{{ l.url | relative_url }}">{{ l.name }}</a>
+      {%- endfor %}
+    </nav>
+  </div>
+  <div class="hero__portrait">
+    <img src="{{ p.photo | relative_url }}" alt="Portrait of {{ p.name }}" width="132" height="165">
+  </div>
+</header>
+
+<p class="bio">{{ p.bio }}</p>
+
+<div class="anchor" id="publications">
+
+{%- assign preprints = site.data.publications | where: "preprint", true -%}
+{%- if preprints.size > 0 %}
+<section class="section">
+  <h2 class="section__title">Preprints</h2>
+  <div class="list">
+    {%- for pub in preprints %}
+    <article class="entry">
+      <div class="spine">
+        <span class="spine__key">{{ pub.venue }}</span>
+        <span class="spine__sub">{{ pub.year }}</span>
+      </div>
+      <div class="entry__body">
+        <h3 class="entry__title">{{ pub.title }}</h3>
+        <p class="authors">{{ pub.authors | replace: site.author_name, me }}</p>
+        {%- if pub.note %}<p class="note">{{ pub.note }}</p>{% endif %}
+        {%- if pub.links %}
+        <p class="entry__links">
+          {%- for l in pub.links %}<a href="{{ l.url }}">{{ l.name }}</a>{% endfor %}
+        </p>
+        {%- endif %}
+      </div>
+    </article>
+    {%- endfor %}
+  </div>
+</section>
+{%- endif %}
+
+<section class="section">
+  <h2 class="section__title">Publications</h2>
+  <div class="list">
+    {%- for pub in site.data.publications %}{% unless pub.preprint %}
+    <article class="entry">
+      <div class="spine">
+        <span class="spine__key">{{ pub.venue }}</span>
+        <span class="spine__sub">{{ pub.year }}</span>
+      </div>
+      <div class="entry__body">
+        <h3 class="entry__title">{{ pub.title }}</h3>
+        <p class="authors">{{ pub.authors | replace: site.author_name, me }}</p>
+        {%- if pub.note %}<p class="note">{{ pub.note }}</p>{% endif %}
+        {%- if pub.links %}
+        <p class="entry__links">
+          {%- for l in pub.links %}<a href="{{ l.url }}">{{ l.name }}</a>{% endfor %}
+        </p>
+        {%- endif %}
+      </div>
+    </article>
+    {%- endunless %}{% endfor %}
+  </div>
+</section>
+
+</div>
+
+<section class="section anchor" id="education">
+  <h2 class="section__title">Education</h2>
+  <div class="list">
+    {%- for e in site.data.cv.education %}
+    <article class="entry">
+      <div class="spine"><span class="spine__sub">{{ e.period }}</span></div>
+      <div class="entry__body">
+        <h3 class="entry__title">{{ e.degree }}</h3>
+        <p class="authors">{% if e.url %}<a href="{{ e.url }}">{{ e.org }}</a>{% else %}{{ e.org }}{% endif %}</p>
+      </div>
+    </article>
+    {%- endfor %}
+  </div>
+</section>
+
+<section class="section anchor" id="experience">
+  <h2 class="section__title">Experience</h2>
+  <div class="list">
+    {%- for e in site.data.cv.experience %}
+    <article class="entry">
+      <div class="spine"><span class="spine__sub">{{ e.period }}</span></div>
+      <div class="entry__body">
+        <h3 class="entry__title">{{ e.role }}</h3>
+        <p class="authors">{% if e.url %}<a href="{{ e.url }}">{{ e.org }}</a>{% else %}{{ e.org }}{% endif %}</p>
+        {%- if e.note %}<p class="note">{{ e.note }}</p>{% endif %}
+      </div>
+    </article>
+    {%- endfor %}
+  </div>
+</section>
+
+<section class="section anchor" id="awards">
+  <h2 class="section__title">Awards and Honors</h2>
+  <div class="list">
+    {%- for a in site.data.cv.awards %}
+    <article class="entry entry--tight">
+      <div class="spine"><span class="spine__sub">{{ a.date }}</span></div>
+      <div class="entry__body">
+        <p class="entry__line">
+          {%- if a.url %}<a href="{{ a.url }}">{{ a.title }}</a>{% else %}{{ a.title }}{% endif %}
+          {%- if a.org %}<span class="note note--inline">{{ a.org }}</span>{% endif %}
+        </p>
+      </div>
+    </article>
+    {%- endfor %}
+  </div>
+</section>
+
+<section class="section anchor" id="service">
+  <h2 class="section__title">Reviewer Service</h2>
+  <div class="list">
+    {%- for s in site.data.cv.services %}
+    <article class="entry entry--tight">
+      <div class="spine"><span class="spine__key">{{ s.kind }}</span></div>
+      <div class="entry__body"><p class="entry__line">{{ s.items }}</p></div>
+    </article>
+    {%- endfor %}
+  </div>
+</section>
+
+{%- if site.data.cv.activities %}
+<section class="section anchor" id="activities">
+  <h2 class="section__title">Activities</h2>
+  <div class="list">
+    {%- for a in site.data.cv.activities %}
+    <article class="entry entry--tight">
+      <div class="spine"><span class="spine__sub">{{ a.period }}</span></div>
+      <div class="entry__body">
+        <p class="entry__line">{{ a.role }}<span class="note note--inline">{{ a.org }}</span></p>
+      </div>
+    </article>
+    {%- endfor %}
+  </div>
+</section>
+{%- endif %}
