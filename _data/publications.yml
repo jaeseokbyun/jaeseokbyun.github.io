@@ -49,7 +49,7 @@
   authors: "Jaeseok Byun*, Taebaek Hwang*, Jianlong Fu, and Taesup Moon"
   venue: ECCV
   year: 2022
-  note: "*: Equal contribution"
+  note: "Work done during internship at Microsoft Research Asia. *: Equal contribution"
 
 - title: "FBI-Denoiser: Fast Blind Image Denoiser for Source-Dependent Noise"
   authors: "Jaeseok Byun*, Sungmin Cha*, and Taesup Moon"
