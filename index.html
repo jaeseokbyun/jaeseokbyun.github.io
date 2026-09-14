@@ -8,8 +8,8 @@ layout: default
   <div class="hero__text">
     <h1 class="hero__name">{{ p.name }}</h1>
     <p class="hero__role">
-      {{ p.role }} at <a href="{{ p.institution.url }}">{{ p.institution.name }}</a><br>
-      <a href="{{ p.lab.url }}">{{ p.lab.name }}</a>, advised by {{ p.advisor }}<br>
+      {{ p.role }}{% if p.team %}, {{ p.team }}{% endif %} at <a href="{{ p.organization.url }}">{{ p.organization.name }}</a><br>
+      Ph.D., <a href="{{ p.phd.url }}">{{ p.phd.school }}</a> · <a href="{{ p.lab.url }}">{{ p.lab.name }}</a>, advised by {{ p.advisor }}<br>
       <span class="hero__email">{{ p.email }}</span>
     </p>
     <nav class="hero__links" aria-label="Profiles">
