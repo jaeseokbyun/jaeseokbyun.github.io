@@ -30,15 +30,15 @@ links:
   #   url: /assets/files/cv.pdf
 
 bio: >-
-  I received my Ph.D. in Electrical and Computer Engineering from
-  <a href="https://www.snu.ac.kr">Seoul National University</a>, advised by
-  Taesup Moon, with the Outstanding Dissertation Award. This fall, I will join
-  the Agentic AI team at <a href="https://aws.amazon.com">Amazon Web Services (AWS)</a>
-  as an Applied Scientist (incoming). I am working towards developing practical AI
-  algorithms in resource-constrained systems. During my Ph.D., I worked as a
+  I am a research scientist working towards developing practical AI
+  algorithms in resource-constrained systems. I received my Ph.D. in Electrical
+  and Computer Engineering from <a href="https://www.snu.ac.kr">Seoul National University</a>,
+  advised by Taesup Moon, with the Outstanding Dissertation Award. This fall, I
+  will join the Agentic AI team at <a href="https://aws.amazon.com">Amazon Web Services (AWS)</a>
+  as an Applied Scientist (incoming). During my Ph.D., I worked as a
   research intern at <a href="https://amazon.jobs/content/en/teams/agi">Amazon AGI</a>
   and <a href="https://www.microsoft.com/en-us/research/lab/microsoft-research-asia/">Microsoft Research Asia</a>,
   and as a visiting student researcher at
   <a href="https://web.stanford.edu/~tsachy/group.html">Stanford University</a>.
-  My primary research focus lies in image denoising and multi-modal
-  representation learning.
+  My primary research focus lies in image denoising, multi-modal
+  representation learning, and agentic AI.
