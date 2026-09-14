@@ -1,6 +1,6 @@
 # 상단 프로필 영역. 여기만 고치면 헤더가 바뀝니다.
 name: Jaeseok Byun
-role: "<strong>(Incoming)</strong> Applied Scientist"
+role: "(Incoming) Applied Scientist"
 photo: /assets/img/profile.jpg
 
 organization:
@@ -35,9 +35,9 @@ bio: >-
   algorithms in resource-constrained systems. I received my Ph.D. in Electrical
   and Computer Engineering from <a href="https://www.snu.ac.kr">Seoul National University</a>,
   advised by Taesup Moon, with the Outstanding Dissertation Award. In
-  <strong>Fall 2026</strong>, I will join the Agentic AI team at
+  Fall 2026, I will join the Agentic AI team at
   <a href="https://aws.amazon.com">Amazon Web Services (AWS)</a> in New York as an
-  <strong>(Incoming) Applied Scientist</strong>. During my Ph.D., I worked as a
+  (Incoming) Applied Scientist. During my Ph.D., I worked as a
   research intern at <a href="https://amazon.jobs/content/en/teams/agi">Amazon AGI</a>
   and <a href="https://www.microsoft.com/en-us/research/lab/microsoft-research-asia/">Microsoft Research Asia</a>,
   and as a visiting student researcher at
