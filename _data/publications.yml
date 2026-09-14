@@ -23,6 +23,12 @@
   year: 2026
   note: "Work done during internship at Amazon AGI"
 
+- title: "KVgrad: Query-Agnostic KV Cache Eviction via Gradient-based Global Importance Scoring"
+  authors: "Jihwan Kwak*, Sunghwan Joo*, Jungyoon Hwang, Jaeseok Byun, and Taesup Moon"
+  venue: ICMLW
+  year: 2026
+  note: "AdaptFM: Resource-Adaptive Foundation Model Inference. *: Equal contribution"
+
 - title: Efficient and Robust SEM Image Denoising for Wafer Defect Inspection
   authors: "Hyungwoong Bae, Jaeseok Byun, Yongwoo Lee, and Taesup Moon"
   venue: Microscopy and Microanalysis
