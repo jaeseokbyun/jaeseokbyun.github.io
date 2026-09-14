@@ -1,20 +1,16 @@
 # 학력 / 경력 / 수상 / 학회 활동. period가 왼쪽 기둥에 표시됩니다.
 
 education:
-  - period: "2021.09 – 2026.08"
+  - period: "2021 – 2026"
     degree: Ph.D. in Electrical and Computer Engineering
     org: Seoul National University
     url: https://www.snu.ac.kr
-  - period: "2013.03 – 2021.08"
+  - period: "2013 – 2021"
     degree: B.S. in Statistics, M.S. in Electrical and Computer Engineering
     org: Sungkyunkwan University
     url: https://www.skku.edu/skku/index.do
 
 experience:
-  - period: "Fall 2026 – Present"
-    role: Research Scientist
-    org: Amazon Web Services (AWS)
-    note: "Agentic AI team"
   - period: "2025.09 – 2025.12"
     role: Applied Scientist Intern
     org: Amazon AGI

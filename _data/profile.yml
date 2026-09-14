@@ -1,6 +1,6 @@
 # 상단 프로필 영역. 여기만 고치면 헤더가 바뀝니다.
 name: Jaeseok Byun
-role: Research Scientist
+role: Applied Scientist (incoming)
 photo: /assets/img/profile.jpg
 
 organization:
@@ -16,7 +16,7 @@ lab:
   url: https://mindlab-snu.github.io
 advisor: Taesup Moon
 
-email: "wotjr3868 [at] snu.ac.kr"
+email: "originalseok [at] gmail.com"
 
 links:
   - name: Google Scholar
@@ -30,13 +30,13 @@ links:
   #   url: /assets/files/cv.pdf
 
 bio: >-
-  I am a research scientist working towards developing practical AI
-  algorithms in resource-constrained systems. This fall, I am joining the
-  Agentic AI team at <a href="https://aws.amazon.com">Amazon Web Services (AWS)</a>.
   I received my Ph.D. in Electrical and Computer Engineering from
   <a href="https://www.snu.ac.kr">Seoul National University</a>, advised by
-  Taesup Moon, with the Outstanding Dissertation Award. During my Ph.D., I worked
-  as a research intern at <a href="https://amazon.jobs/content/en/teams/agi">Amazon AGI</a>
+  Taesup Moon, with the Outstanding Dissertation Award. This fall, I will join
+  the Agentic AI team at <a href="https://aws.amazon.com">Amazon Web Services (AWS)</a>
+  as an Applied Scientist. I am working towards developing practical AI
+  algorithms in resource-constrained systems. During my Ph.D., I worked as a
+  research intern at <a href="https://amazon.jobs/content/en/teams/agi">Amazon AGI</a>
   and <a href="https://www.microsoft.com/en-us/research/lab/microsoft-research-asia/">Microsoft Research Asia</a>,
   and as a visiting student researcher at
   <a href="https://web.stanford.edu/~tsachy/group.html">Stanford University</a>.
